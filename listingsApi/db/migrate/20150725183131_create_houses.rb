@@ -19,6 +19,5 @@ class CreateHouses < ActiveRecord::Migration
     add_index :houses, :bedroom
     add_index :houses, :bathrooms
     add_index :houses, :sq_ft
-    add_index :houses, :street, unique: true
   end
 end

@@ -11,28 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150725183826) do
+ActiveRecord::Schema.define(version: 20150725192206) do
 
   create_table "houses", force: :cascade do |t|
     t.string   "street",     null: false
     t.integer  "status_id",  null: false
     t.integer  "price",      null: false
-    t.integer  "bedroom",    null: false
+    t.integer  "bedrooms",   null: false
     t.integer  "bathrooms",  null: false
     t.integer  "sq_ft",      null: false
-    t.integer  "lat",        null: false
-    t.integer  "lng",        null: false
+    t.decimal  "lat",        null: false
+    t.decimal  "lng",        null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   add_index "houses", ["bathrooms"], name: "index_houses_on_bathrooms"
-  add_index "houses", ["bedroom"], name: "index_houses_on_bedroom"
+  add_index "houses", ["bedrooms"], name: "index_houses_on_bedrooms"
   add_index "houses", ["lat", "lng"], name: "index_houses_on_lat_and_lng", unique: true
   add_index "houses", ["price"], name: "index_houses_on_price"
   add_index "houses", ["sq_ft"], name: "index_houses_on_sq_ft"
   add_index "houses", ["status_id"], name: "index_houses_on_status_id"
-  add_index "houses", ["street"], name: "index_houses_on_street", unique: true
 
   create_table "statuses", force: :cascade do |t|
     t.string   "name",       null: false
