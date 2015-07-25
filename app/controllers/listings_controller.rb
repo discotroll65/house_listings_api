@@ -1,4 +1,7 @@
 class ListingsController < ApplicationController
+  def root
+    redirect_to listings_path
+  end
   def index
     min_price = get_params(:min_price, 0)
     max_price = get_params(:max_price, 999_999_999_999_999)
