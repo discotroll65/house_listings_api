@@ -9,8 +9,7 @@ The main API end point can be reached by going to
 [https://garrett-house-listing-api.herokuapp.com]
 
 This will redirect you by default to show all the listings:
-[/listings][default]
-[default][https://garrett-house-listing-api.herokuapp.com]
+[https://garrett-house-listing-api.herokuapp.com/listings]
 
 However, you can search by various filters:
 ## Filter by Price, between 100,000 and 200,000
