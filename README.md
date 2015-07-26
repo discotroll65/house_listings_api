@@ -30,5 +30,5 @@ However, you can search by various filters:
 [sqftlink]: https://garrett-house-listing-api.herokuapp.com/listings?min_sq_ft=3900&max_sq_ft=4000
 
 ## Filter by lat/ long 
-[/listings?min_lat=3900&max_lat=34&min_lng=-112&max_lng=-111][latlonglink]
+[/listings?min_lat=33.52&max_lat=33.53&min_lng=-111.89&max_lng=-111.87][latlonglink]
 [latlonglink]: https://garrett-house-listing-api.herokuapp.com/listings?min_lat=33.52&max_lat=33.53&min_lng=-111.89&max_lng=-111.87
