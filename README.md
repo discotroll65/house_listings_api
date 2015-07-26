@@ -2,7 +2,11 @@
 Demo project playing around with GeoJSON
 
 # How to Use
-This is an API endpoint that lets you view the active listings from a dataset of 10,000 houses.
+This is a JSON API endpoint that lets you view the active listings from a dataset of 10,000 houses.
+
+This, as well as any JSON API, will be infinitely more enjoyable to use if you have the following
+chrome extension ( called JSONView) installed, which will format your JSON into nice collapseable tidbits:
+https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en-US
 
 The main API end point can be reached by going to
 
@@ -37,3 +41,7 @@ However, you can search by various filters:
 If I were to hack on this some more, it could be cool to look into another third party API I could hit to return the 4 lat long points that define the smallest square completely enveloping a particular zipcode; then people could also search by zipcode.
 
 It could also be helpful to have a "total count of results" key value at the top as well.
+
+More ideas include:
+* Letting people specify status as well, so they could see what reason houses sold for
+* Setting a limit on the results, so it isn't so overwhelming
