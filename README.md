@@ -45,3 +45,5 @@ It could also be helpful to have a "total count of results" key value at the top
 More ideas include:
 * Letting people specify status as well, so they could see what reason houses sold for
 * Setting a limit on the results, so it isn't so overwhelming
+
+Finally, not sure if this could be optimized, but might be worth seeing if the code in the seed file could be tweaked so that it doesn't take so long to load the database from the initial seed file -- maybe it's just because there are 10,000 houses, but it takes a good 2 or 3 minutes to fully load.
