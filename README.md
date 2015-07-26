@@ -32,3 +32,8 @@ However, you can search by various filters:
 ## Filter by lat/ long 
 [/listings?min_lat=33.52&max_lat=33.53&min_lng=-111.89&max_lng=-111.87][latlonglink]
 [latlonglink]: https://garrett-house-listing-api.herokuapp.com/listings?min_lat=33.52&max_lat=33.53&min_lng=-111.89&max_lng=-111.87
+
+#Ways this could be cooler
+If I were to hack on this some more, it could be cool to look into another third party API I could hit to return the 4 lat long points that define the smallest square completely enveloping a particular zipcode; then people could also search by zipcode.
+
+It could also be helpful to have a "total count of results" key value at the top as well.
